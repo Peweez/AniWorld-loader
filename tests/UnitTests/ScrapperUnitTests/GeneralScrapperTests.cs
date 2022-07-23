@@ -1,11 +1,10 @@
-namespace ScrapperUnitTests
-{
-    public class UnitTest1
-    {
-        [Fact]
-        public void Test1()
-        {
+namespace ScrapperUnitTests;
 
-        }
+public class GeneralScrapperTests
+{
+    [Fact]
+    public void ScrapWholeSiteTest()
+    {
+
     }
 }
