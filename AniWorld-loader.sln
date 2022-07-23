@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniWorld.REST", "src\web-api\AniWorld.REST\AniWorld.REST.csproj", "{99427FB6-198C-4547-80F5-62B655E66DB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AniWorld.REST", "src\web-api\AniWorld.REST\AniWorld.REST.csproj", "{99427FB6-198C-4547-80F5-62B655E66DB7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9EE37078-81CB-407A-9729-CE49A60C036F}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{10D52C7B-64AD-4592-8F0B-FE48C67D069F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web-api", "web-api", "{6506DAAF-C8BA-4E6B-9CA4-E88CBCA726EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapperUnitTests", "tests\UnitTests\ScrapperUnitTests\ScrapperUnitTests.csproj", "{8861F0DA-8123-41AE-A632-D914DCD899D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{99427FB6-198C-4547-80F5-62B655E66DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99427FB6-198C-4547-80F5-62B655E66DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99427FB6-198C-4547-80F5-62B655E66DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8861F0DA-8123-41AE-A632-D914DCD899D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8861F0DA-8123-41AE-A632-D914DCD899D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8861F0DA-8123-41AE-A632-D914DCD899D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8861F0DA-8123-41AE-A632-D914DCD899D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{99427FB6-198C-4547-80F5-62B655E66DB7} = {6506DAAF-C8BA-4E6B-9CA4-E88CBCA726EE}
 		{6506DAAF-C8BA-4E6B-9CA4-E88CBCA726EE} = {9EE37078-81CB-407A-9729-CE49A60C036F}
+		{8861F0DA-8123-41AE-A632-D914DCD899D0} = {A398BD01-1E61-4EC5-8FB1-CAC1C7256796}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {547A6CC2-4982-4025-9307-5CB278289811}
