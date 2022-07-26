@@ -1,4 +1,4 @@
-#region MIT License
+﻿#region MIT License
 
 //MIT License
 //Copyright (c) [2022] [slowpoke games by Jan Jalinski aka peweez]
@@ -23,28 +23,30 @@
 
 #endregion
 
-var builder = WebApplication.CreateBuilder(args);
+using System.Reflection.Metadata;
 
-// Add services to the container.
+namespace AniWorld.REST.Data.Models;
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+/// <summary>
+/// A single Anime entity
+/// </summary>
+public class Anime : BaseEntity
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    /// <summary>
+    /// Name of the Anime
+    /// </summary>
+    public string Name { get; set; } 
+
+    /// <summary>
+    /// The description of the anime
+    /// </summary>
+    public string Description { get; set; } 
+
+    /// <summary>
+    /// The seasons of the anime
+    /// </summary>
+    public AnimeSeason[]? AnimeSeasons { get; set; }
+
+    public 
+    
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();

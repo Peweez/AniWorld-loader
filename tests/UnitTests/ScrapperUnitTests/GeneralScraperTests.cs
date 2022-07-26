@@ -23,28 +23,22 @@
 
 #endregion
 
-var builder = WebApplication.CreateBuilder(args);
+namespace ScraperUnitTests;
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+public class GeneralScraperTests
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    private readonly Uri _listAnimesByGenre = new("https://aniworld.to/animes-genres");
+    private readonly Uri _listAnimesByAlphabet = new("https://aniworld.to/animes-alphabet");
+    private readonly Uri _aniworldSearch = new("https://aniworld.to/search");
+
+    [Fact]
+    public void ScrapeByGenreTest()
+    {
+        // arrange
+        
+        // act
+        
+        // assert
+        Assert.NotEmpty(Enumerable.Empty<int>());
+    }
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();

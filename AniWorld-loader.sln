@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{10D52C7B-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web-api", "web-api", "{6506DAAF-C8BA-4E6B-9CA4-E88CBCA726EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrapperUnitTests", "tests\UnitTests\ScrapperUnitTests\ScrapperUnitTests.csproj", "{8861F0DA-8123-41AE-A632-D914DCD899D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScraperUnitTests", "tests\UnitTests\ScrapperUnitTests\ScraperUnitTests.csproj", "{8861F0DA-8123-41AE-A632-D914DCD899D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-#region MIT License
+﻿#region MIT License
 
 //MIT License
 //Copyright (c) [2022] [slowpoke games by Jan Jalinski aka peweez]
@@ -23,28 +23,18 @@
 
 #endregion
 
-var builder = WebApplication.CreateBuilder(args);
+namespace AniWorld.REST.Controllers;
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+/// <summary>
+/// The scraper REST endpoint
+/// </summary>
+[Route("api/v1/[controller]")]
+[ApiController]
+public class ScraperController : ControllerBase
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    private readonly Uri _listAnimesByGenre = new("https://aniworld.to/animes-genres");
+    private readonly Uri _listAnimesByAlphabet = new("https://aniworld.to/animes-alphabet");
+    private readonly Uri _aniworldSearch = new("https://aniworld.to/search");
+
+
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
